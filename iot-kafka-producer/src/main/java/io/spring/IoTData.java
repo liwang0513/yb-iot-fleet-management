@@ -1,32 +1,26 @@
-package com.iot.app.kafka.vo;
+package io.spring;
 
 import java.io.Serializable;
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-/**
- * Class to represent the IoT vehicle data.
- * 
- * @author abaghel
- *
- */
-public class IoTData implements Serializable{
-	
+public class IoTData implements Serializable {
+
 	private String vehicleId;
 	private String vehicleType;
 	private String routeId;
 	private String longitude;
 	private String latitude;
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone="MST")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "MST")
 	private Date timestamp;
 	private double speed;
 	private double fuelLevel;
-	
-	public IoTData(){
-		
+
+	public IoTData() {
+
 	}
-	
+
 	public IoTData(String vehicleId, String vehicleType, String routeId, String latitude, String longitude,
 			Date timestamp, double speed, double fuelLevel) {
 		super();
