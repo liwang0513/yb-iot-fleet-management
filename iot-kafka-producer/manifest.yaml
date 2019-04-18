@@ -5,7 +5,7 @@ applications:
   path: target/iot-kafka-producer-0.0.1-SNAPSHOT.jar
   buildpack: java_buildpack_offline
   env:
-    KAFKA_BROKERS: 35.192.127.17:9071
+    KAFKA_BROKERS: kafka.sebastopol.cf-app.com:9092
     KAFKA_USERNAME: test
     KAFKA_PASSWORD: test123
     KAFKA_TOPIC: example
